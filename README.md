@@ -1,5 +1,5 @@
 # Online Learning Platform (Using React + Typescript)
-***This project constructed by only Bach***
+***This project was constructed only by Bach.***
 
 This project implements:
 - **Classes**: Course, Student, Teacher, Assignment, Exam
