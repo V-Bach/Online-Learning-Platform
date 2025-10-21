@@ -7,44 +7,15 @@ This project implements:
 - **Interfaces**: GradingSystem interface with implementations (SimpleGrading, WeightedGrading)
 
 ## UML - Mermaid
-classDiagram
-  class Person {
-    +string id
-    +string name
-    +string email
-  }
-  Person <|-- Student
-  Person <|-- Teacher
-
-  class Course {
-    +string id
-    +string title
-    +Teacher? teacher
-    +Assignment[] assignments
-    +Student[] students
-    +recordScore(studentId, score)
-    +gradeAll() : Map
-    <<abstract>>
-  }
-  Course <|-- OnlineCourse
-  Course <|-- OfflineCourse
-
-  class Assignment
-  class Exam
-  Assignment <|-- Exam
-
-  class GradingSystem {
-    <<interface>>
-    +calculateGrade(course) : Map
-  }
-  GradingSystem <|.. SimpleGrading
-  GradingSystem <|.. WeightedGrading
+<img width="292" height="628" alt="image" src="https://github.com/user-attachments/assets/9c537a47-ee85-4331-89c9-3b63b40ded62" />
 
 
 ## How to run locally
 1. `npm install`
 2. `npm run dev`
 3. Open `http://localhost:5173`
+
+## NOTE: This website is for Educational purpose only 
 
 
 
