@@ -1,52 +1,21 @@
-# Online Learning Platform — React + TypeScript (OOP)
+# Online Learning Platform (Using React + Typescript)
+***This project was constructed only by Bach.***
 
-This project is an educational, frontend-only prototype that implements:
+This project implements:
 - **Classes**: Course, Student, Teacher, Assignment, Exam
 - **Inheritance**: OnlineCourse and OfflineCourse extend Course
 - **Interfaces**: GradingSystem interface with implementations (SimpleGrading, WeightedGrading)
-- Clean, friendly UI and well-structured TypeScript code
 
-## UML (Mermaid)
-```mermaid
-classDiagram
-  class Person {
-    +string id
-    +string name
-    +string email
-  }
-  Person <|-- Student
-  Person <|-- Teacher
+## UML - Mermaid
+<img width="292" height="628" alt="image" src="https://github.com/user-attachments/assets/9c537a47-ee85-4331-89c9-3b63b40ded62" />
 
-  class Course {
-    +string id
-    +string title
-    +Teacher? teacher
-    +Assignment[] assignments
-    +Student[] students
-    +recordScore(studentId, score)
-    +gradeAll() : Map
-    <<abstract>>
-  }
-  Course <|-- OnlineCourse
-  Course <|-- OfflineCourse
 
-  class Assignment
-  class Exam
-  Assignment <|-- Exam
-
-  class GradingSystem {
-    <<interface>>
-    +calculateGrade(course) : Map
-  }
-  GradingSystem <|.. SimpleGrading
-  GradingSystem <|.. WeightedGrading
-```
-
-## Run locally
+## How to run locally
 1. `npm install`
 2. `npm run dev`
 3. Open `http://localhost:5173`
 
-## Notes
-- This is frontend-only. For a real platform add backend, auth, DB, and file storage.
-- Code organized under `src/` into `models`, `grading`, and `components`.
+## NOTE: This website is for Educational purpose only 
+
+
+
