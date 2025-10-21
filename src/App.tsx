@@ -205,7 +205,7 @@ export default function App(){
         </aside>
       </main>
 
-      <div className="footer">This demo is the preview version of OOP structure and grading strategies. Constructing by Bach only</div>
+      <div className="footer">This demo is the preview version of OOP structure and grading strategies. Constructing only by Bach</div>
     </div>
   )
 }
